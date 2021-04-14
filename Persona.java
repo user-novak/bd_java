@@ -11,26 +11,18 @@ package com.mycompany.mavenproject1;
  */
 public class Persona {
 
-    private int id;
     private String nombre;
-    private String cargo;
+    private String apellido;
+    private String ciudad;
 
     public Persona() {
 
     }
 
-    public Persona(int id, String nombre, String cargo) {
-        this.id = id;
+    public Persona(String nombre, String apellido, String ciudad) {
         this.nombre = nombre;
-        this.cargo = cargo;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
+        this.apellido = apellido;
+        this.ciudad = ciudad;
     }
 
     public String getNombre() {
@@ -41,12 +33,20 @@ public class Persona {
         this.nombre = nombre;
     }
 
-    public String getCargo() {
-        return cargo;
+    public String getApellido() {
+        return apellido;
     }
 
-    public void setCargo(String cargo) {
-        this.cargo = cargo;
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+    
+    public String getCiudad() {
+        return ciudad;
+    }
+
+    public void setCiudad(String ciudad) {
+        this.ciudad = ciudad;
     }
 
 }
